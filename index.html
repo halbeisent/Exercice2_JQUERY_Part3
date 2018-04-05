@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 2 Partie 3 JQUERY</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <button type="button" id="plusbutton">+</button>
+    <button type="button" id="minusbutton">-</button>
+    <input type="text" id="counter" />
+    <script>
+    var buttonclick = 0;
+    $('#plusbutton').click(function() {
+      buttonclick++;
+      $('#counter').val('Nombre de clics sur le bouton: ' + buttonclick);
+      console.log(buttonclick);
+    })
+    $('#minusbutton').click(function() {
+      buttonclick--;
+      $('#counter').val('Nombre de clics sur le bouton: ' + buttonclick);
+      console.log(buttonclick);
+    })
+    </script>
+  </body>
+</html>
